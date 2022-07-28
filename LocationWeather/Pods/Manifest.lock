@@ -1,0 +1,24 @@
+PODS:
+  - lottie-ios (3.3.0)
+  - ObjectMapper (3.5.3)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - lottie-ios
+  - ObjectMapper (~> 3.5)
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
+    - ObjectMapper
+    - SnapKit
+
+SPEC CHECKSUMS:
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 32ac36ba1190e254c94888c3c300e4645ac15b21
+
+COCOAPODS: 1.11.3

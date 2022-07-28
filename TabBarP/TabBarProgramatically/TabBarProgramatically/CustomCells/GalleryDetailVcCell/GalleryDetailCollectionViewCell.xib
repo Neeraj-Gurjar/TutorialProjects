@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryDetailCollectionViewCell" id="gTV-IL-0wX" customClass="GalleryDetailCollectionViewCell" customModule="TabBarProgramatically" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="264"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="264"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Amazing Craft" translatesAutoresizingMaskIntoConstraints="NO" id="ZLY-k6-cF8">
+                        <rect key="frame" x="0.0" y="0.0" width="356" height="264"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="264" id="8jQ-uB-qOG"/>
+                            <constraint firstAttribute="width" constant="356" id="cgp-ag-4sA"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ZLY-k6-cF8" secondAttribute="trailing" id="GKJ-it-PSV"/>
+                <constraint firstItem="ZLY-k6-cF8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WEc-TI-zEz"/>
+                <constraint firstAttribute="bottom" secondItem="ZLY-k6-cF8" secondAttribute="bottom" id="daO-xD-otv"/>
+                <constraint firstItem="ZLY-k6-cF8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hEP-Fw-Zht"/>
+            </constraints>
+            <size key="customSize" width="356" height="264"/>
+            <connections>
+                <outlet property="storyimg" destination="ZLY-k6-cF8" id="Rde-Kn-q7w"/>
+            </connections>
+            <point key="canvasLocation" x="24.637681159420293" y="67.633928571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Amazing Craft" width="1728" height="1152"/>
+    </resources>
+</document>
