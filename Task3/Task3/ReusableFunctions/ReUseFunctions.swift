@@ -29,5 +29,15 @@ class ReUsableFunc {
     
     static func borderColor(tfName:UITextField, colorName:String){
         tfName.layer.borderColor = UIColor(named: colorName)?.cgColor
+        
+    }
+    
+    static func setUpColorInLabelText(textString:String, colorOne:UIColor, colorTwo:UIColor, forTextOne:String, forTextTwo:String,  setForLbl:UILabel){
+        
+        let attributedString:NSMutableAttributedString = NSMutableAttributedString(string: textString)
+        attributedString.setColor(color: colorOne, forText: forTextOne)
+        attributedString.setColor(color: colorTwo, forText: forTextTwo)
+        setForLbl.attributedText = attributedString
+   
     }
 }

@@ -7,6 +7,7 @@ target 'Task3' do
 
   # Pods for Task3
 	pod 'IQKeyboardManager'
+	pod 'ObjectMapper'
 
 
 end

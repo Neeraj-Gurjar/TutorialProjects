@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 //SingUpViewController MobileNumber, Password, EmailAddress Validation Extension
 extension String{
@@ -29,5 +30,26 @@ extension String{
     var isValidEmail:Bool{
         let emailTest = NSPredicate(format: RgxCheck.match, RgxCheck.emailRgx)
         return emailTest.evaluate(with: self)
+    }
+}
+
+extension NSMutableAttributedString{
+    func setColor(color:UIColor, forText stringValue:String){
+        let range:NSRange = self.mutableString.range(of: stringValue, options: .caseInsensitive)
+        self.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
+    }
+}
+
+extension UIViewController{
+    public func setUserDefault(key: String, value: AnyObject) {
+        let userDefaults = UserDefaults.standard
+        userDefaults.setValue(value, forKey: key)
+        userDefaults.synchronize()
+    }
+    
+
+    public func getUserDefault(key: String) -> AnyObject? {
+        let userDefaults = UserDefaults.standard
+        return userDefaults.value(forKey: key) as AnyObject?
     }
 }

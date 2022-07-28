@@ -16,7 +16,7 @@ struct Constants{
     static let enterConfimPass = "Please enter confirm password"
     static let passMatch = "Password's not matched"
     static let signUp = "SignUp Successful"
-    static let emailCheck = "Enter valid Email"
+    static let emailCheck = "Please enter valid Email"
     static let numberCheck = "Phone number should be in formatted properly"
     static let passWordCheck = "Password needs to have min of 8 chars, 1 Cap, 1 special char, 1 number"
     static let pleaseFillAll = "Please fill all fields first"
@@ -36,4 +36,9 @@ struct NavigationIdentifier{
 struct colorCode{
     static let redBorder = "borderRed"
     static let grayBorder = "borderGray"
+    static let themeColor = "AppThemeColor"
+}
+
+struct UserDefaultKey{
+    static let kUserkey = "USER_KEY"
 }
